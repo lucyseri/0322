@@ -1,0 +1,121 @@
+@import url(common/reset.css);
+.header{
+  width: 100%;
+  height: auto;
+  background-color: #ccc;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 10px 0;
+}
+.header .inner-header{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.header .inner-header .nav{
+  flex: 0 1 1200px;
+  height: auto;
+  padding: 0 1vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .inner-header .nav h1.logo{
+  flex: 0 0 120px;
+  height: auto;
+}
+.header .inner-header .nav h1.logo img{
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+
+.header .inner-header .nav .gnb{
+  flex: 0 5 400px;
+  height: auto;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+.header .inner-header .nav .gnb ul{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.header .inner-header .nav .gnb ul>li{
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.header .inner-header .nav .gnb ul>li:hover{
+  background-color: #000;
+  color: #fff;
+}
+.header .inner-header .nav .gnb ul>li a{
+  line-height: 30px;
+  background-color: inherit;
+  color: inherit;
+}
+
+.headerOn{
+  box-shadow: 0 2px 2px #000;
+  background-color: #555;
+  transition: all 0.2s;
+  padding: 0 0;
+}
+
+
+/* right-menu */
+.right-menu{
+  width: auto;
+  height: auto;
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.right-menu .scroll-btn{
+  
+}
+.right-menu .scroll-btn ul{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3px;
+}
+.right-menu .scroll-btn ul>li{
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+}
+.right-menu .scroll-btn ul>li:hover{
+  background-color: #000;
+}
+.on{
+  background-color: #000;
+}
+
+/* sections */
+
+.sections .section{
+  width: 100%;
+  max-width: 100vh;
+  height: 100vh;
+}
+.sections .section{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width:640px) {
+  .header .inner-header .nav .gnb{
+    display: none;
+  }
+}
